@@ -1,0 +1,17 @@
+### Listar de livros
+GET https://localhost:7220/api/livro/listar
+
+### Buscar produtos
+GET https://localhost:7220/api/livro/buscar/2
+
+### Cadastrar produto
+POST https://localhost:7220/api/livro/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "De volta para o futuro",
+    "descricao" : "a bordo de um possante",
+    "quantidade" : 120,
+    "preco" : 9.5,
+    "generoId" : 2
+}

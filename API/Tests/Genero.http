@@ -1,0 +1,10 @@
+### Listar Generos ###
+GET https://localhost:7220/api/genero/listar
+
+### Criar Genero ###
+POST https://localhost:7220/api/genero/cadastrar
+Content-Type: application/json
+
+{
+    "nome": "Científico"
+}
