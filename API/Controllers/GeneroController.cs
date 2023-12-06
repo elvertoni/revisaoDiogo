@@ -1,7 +1,8 @@
-namespace API.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using API.Models;
 using API.Data;
+
+namespace API.Controllers;
 
 [ApiController]
 [Route("api/genero")]
