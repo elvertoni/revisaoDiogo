@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(AppDataContext))]
-    [Migration("20231206010830_create")]
+    [Migration("20231207194611_create")]
     partial class create
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -51,14 +51,14 @@ namespace API.Migrations
                     b.Property<int>("GeneroId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Nome")
-                        .HasColumnType("TEXT");
-
                     b.Property<double>("Preco")
                         .HasColumnType("REAL");
 
                     b.Property<int>("Quantidade")
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("Titulo")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("LivroId");
 

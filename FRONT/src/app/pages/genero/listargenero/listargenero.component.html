@@ -1,1 +1,12 @@
-<p>listargenero works!</p>
+<table>
+    <tr>
+      <th>#</th>
+      <th>Nome</th>
+      <th>Criado em</th>
+    </tr>
+    <tr *ngFor="let genero of generos">
+      <td>{{ genero.generoId }}</td>
+      <td>{{ genero.nome }}</td>
+      <td>{{ genero.criadoEm }}</td>
+    </tr>
+  </table>

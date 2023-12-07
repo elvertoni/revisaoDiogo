@@ -1,1 +1,26 @@
-<p>cadastrarlivro works!</p>
+<h2>Cadastrar Livro</h2>
+<div>
+    <label>Título</label>
+    <input [(ngModel)]="titulo"/>
+</div>
+<div>
+    <label>Descrição</label>
+    <input [(ngModel)]="descricao"/>
+</div>
+<div>
+    <label>Preço</label>
+    <input [(ngModel)]="preco"/>
+</div>
+<div>
+    <label>Quantidade</label>
+    <input [(ngModel)]="quantidade"/>
+</div>
+<div>
+    <label>Gênero</label>
+    <select [(ngModel)]="generoId">
+        <option *ngFor="let g of generos" [value]="g.generoId">
+            {{g.nome}}
+        </option>
+    </select>
+</div>
+<div><button (click)="cadastrar()">Cadastrar</button></div>

@@ -6,5 +6,5 @@ POST https://localhost:7220/api/genero/cadastrar
 Content-Type: application/json
 
 {
-    "nome": "Científico"
+    "nome": "Auto Ajuda"
 }

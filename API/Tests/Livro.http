@@ -9,9 +9,9 @@ POST https://localhost:7220/api/livro/cadastrar
 Content-Type: application/json
 
 {
-    "nome" : "De volta para o futuro",
-    "descricao" : "a bordo de um possante",
-    "quantidade" : 120,
-    "preco" : 9.5,
-    "generoId" : 2
+    "titulo" : "Agape",
+    "descricao" : "uma amor verdadeiro",
+    "quantidade" : 100,
+    "preco" : 21.50,
+    "generoId" : 4
 }

@@ -49,14 +49,14 @@ namespace API.Migrations
                     b.Property<int>("GeneroId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Nome")
-                        .HasColumnType("TEXT");
-
                     b.Property<double>("Preco")
                         .HasColumnType("REAL");
 
                     b.Property<int>("Quantidade")
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("Titulo")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("LivroId");
 

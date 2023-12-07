@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,6 +8,7 @@ import { ListarlivroComponent } from './pages/livro/listarlivro/listarlivro.comp
 import { CadastrarlivroComponent } from './pages/livro/cadastrarlivro/cadastrarlivro.component';
 import { ListargeneroComponent } from './pages/genero/listargenero/listargenero.component';
 import { CadastrargeneroComponent } from './pages/genero/cadastrargenero/cadastrargenero.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { CadastrargeneroComponent } from './pages/genero/cadastrargenero/cadastr
     ListarlivroComponent,
     CadastrarlivroComponent,
     ListargeneroComponent,
-    CadastrargeneroComponent
+    CadastrargeneroComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

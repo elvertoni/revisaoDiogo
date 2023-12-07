@@ -1,1 +1,20 @@
-<p>listarlivro works!</p>
+<table>
+  <tr>
+    <th>#</th>
+    <th>Título</th>
+    <th>Descrição</th>
+    <th>Criado em</th>
+    <th>Preço</th>
+    <th>Quantidade</th>
+    <th>Gênero</th>
+  </tr>
+  <tr *ngFor="let livro of livros">
+    <td>{{ livro.livroId }}</td>
+    <td>{{ livro.titulo }}</td>
+    <td>{{ livro.descricao }}</td>
+    <td>{{ livro.criadoEm }}</td>
+    <td>{{ livro.preco }}</td>
+    <td>{{ livro.quantidade }}</td>
+    <td>{{ livro.genero?.nome }}</td>
+  </tr>
+</table>

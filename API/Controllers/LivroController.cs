@@ -124,7 +124,7 @@ public class LivroController : ControllerBase
                     return NotFound();
                 }
                 livroCadastrado.Genero = genero;
-                livroCadastrado.Nome = livro.Nome;
+                livroCadastrado.Titulo = livro.Titulo;
                 livroCadastrado.Descricao = livro.Descricao;
                 livroCadastrado.Quantidade = livro.Quantidade;
                 livroCadastrado.Preco = livro.Preco;
